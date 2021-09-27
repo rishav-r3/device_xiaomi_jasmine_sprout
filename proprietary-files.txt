@@ -128,6 +128,7 @@ vendor/etc/camera/wayne_imx486_sunny_cn_i_chromatix.xml
 vendor/etc/camera/wayne_imx486_sunny_cn_iii_chromatix.xml
 vendor/etc/camera/wayne_imx486_sunny_india_i_chromatix.xml
 vendor/etc/camera/wayne_imx486_sunny_india_iii_chromatix.xml
+vendor/etc/MIUI_DualCamera_watermark.png
 vendor/lib/hw/camera.sdm660.so
 vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmjpeg_interface.so
@@ -923,6 +924,16 @@ vendor/lib64/libsecureui_svcsock.so|889d4a12c5dee56ed4b10548abbd7b9033cbdad2
 vendor/lib64/libSecureUILib.so|3a059d1fe3395eaefeb7817ad3af46987b6f4794
 vendor/lib64/libssd.so|a64337d8044607b81adcf7e8c5760cf8cdcf82b4
 vendor/lib64/libStDrvInt.so|a7bd8140e2cd5aa70a7d929e01233e5b71844cd8
+
+# Fingerprint - from jasmine V10.0.2.0.PDIMIFJ
+vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.sdm660.so|a614d71107ce28380e8cdcab23e80fb7d014a22d
+vendor/lib64/hw/fingerprint.fpc.default.so|ac0285f2ee91037477771bac74436fa03828edf6
+vendor/lib64/hw/fingerprint.goodix.default.so|30a459e4ff9c047d1cc6a130885460cc07426826
+vendor/lib64/com.fingerprints.extension@1.0.so|2ae37b689b286921702cf9533e9f09ffe6736968
+vendor/lib64/libgf_ca.so|24a5dc2647d5c4b892ed16d74c31cc841604a505|b7635dcbea9a7e7252e746914f995a5ffb92b5d0
+vendor/lib64/libgf_hal.so|d601b957f58e840d2ff5a69f7fda74aca93805b2
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|ac7f5d1a9cfc04926cde4fb475d074331ba8dbf5
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so|b47f3d59c111a97a47ed38d4cb05ddf59a47ebac
 
 # Fingerprint firmware - from jasmine V10.0.2.0.PDIMIFJ
 etc/firmware/goodixfp.b00:vendor/firmware/goodixfp.b00|c5c3594b47dffb3aadb81abced42518d24637893

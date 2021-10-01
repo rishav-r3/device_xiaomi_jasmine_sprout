@@ -396,7 +396,10 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
+    vendor.qti.hardware.vibrator.service	
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/excluded-input-devices.xml:vendor/etc/excluded-input-devices.xml
 
 # Verity
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system

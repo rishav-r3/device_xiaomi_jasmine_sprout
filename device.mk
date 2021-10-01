@@ -202,10 +202,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
 
-# fwk-detect
+# framework-detect
 PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor
+    libqti_vndfwk_detect.vendor \
+    libvndfwk_detect_jni.qti.vendor
 
 # GPS / Location
 PRODUCT_PACKAGES += \
@@ -240,6 +240,11 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor
+	
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml
 
 # Init
 PRODUCT_PACKAGES += \
@@ -329,32 +334,20 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
 
-# QMI
-PRODUCT_PACKAGES += \
-    libjson
-
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0 \
-    rild \
+    android.hardware.radio.config@1.1 \
+    android.hardware.radio@1.5 \
+    android.hardware.secure_element@1.1 \
+    libavservices_minijail.vendor \
+    libjson \
+    libprotobuf-cpp-full \
     librmnetctl \
-    libprotobuf-cpp-full
-
-PRODUCT_PACKAGES += \
-    ims-ext-common \
-    ims_ext_common.xml \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+    libxml2
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -371,11 +364,19 @@ PRODUCT_PACKAGES += \
     libcamera_sdm660_shim \
     libshim_dpmframework
 
+# Telephony
+PRODUCT_PACKAGES += \
+    qti_telephony_hidl_wrapper.xml \
+    qti_telephony_utils.xml \
+    qti-telephony-hidl-wrapper \
+    qti-telephony-utils \
+    telephony-ext
+	
 # Tethering
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
 
-# Tetheroffload
+# IPACM
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml

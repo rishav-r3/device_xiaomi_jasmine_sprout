@@ -379,6 +379,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
+	
+# Thermal
+PRODUCT_COPY_FILES += \
+	 $(DEVICE_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
 # Update engine
 PRODUCT_PACKAGES += \

@@ -214,7 +214,10 @@ on boot
     #sensors log dir
     mkdir /data/vendor/sensors
     chown system system /data/vendor/sensors
-
+  
+    start vendor.qcrild
+    start vendor.qcrild2
+    
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
@@ -371,9 +374,6 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 	
-    start vendor.qcrild
-    start vendor.qcrild2
-
 on property:ro.vendor.iocgrp.config=1
     mkdir /dev/blkio
     mount cgroup none /dev/blkio blkio

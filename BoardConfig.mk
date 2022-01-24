@@ -10,6 +10,9 @@ DEVICE_PATH := device/xiaomi/jasmine_sprout
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
 TARGET_NO_BOOTLOADER := true
 
+# Broken Files/Headers
+BUILD_BROKEN_DUP_RULES := true
+
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
 

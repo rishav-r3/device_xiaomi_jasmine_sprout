@@ -392,10 +392,6 @@ PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
     qti-telephony-utils \
     telephony-ext
-	
-# Tethering
-PRODUCT_PACKAGES += \
-    TetheringConfigOverlay
 
 # IPACM
 PRODUCT_PACKAGES += \

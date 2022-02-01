@@ -426,6 +426,10 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service.xiaomi_sdm660
+
 # Vibrator
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service	
